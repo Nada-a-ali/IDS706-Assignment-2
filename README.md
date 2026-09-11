@@ -1,6 +1,6 @@
 # 1. Coffee Quality Data Analysis
 
-In this project, a coffee quality dataset was imported via Kaggle for analysis. This dataset contains information from reviewers for Arabica and Robusta coffee bean types. 
+In this project, a coffee quality dataset was imported via Kaggle, linking authored Git <https://github.com/jldbc/coffee-quality-database.git> for analysis. This dataset contains information from reviewers for Arabica and Robusta coffee bean types. 
 
 The imported dataset includes quality measures (e.g., flavor, aftertaste, sweetness) as well as farm metadata (e.g., country of origin, region), among other information. 
 
