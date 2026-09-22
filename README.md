@@ -30,3 +30,21 @@ Linear regression was implemented to begin experimenting with model inputs and o
 # 5. Experimenting with Rust 
 
 Ran the Rust Jupyter Notebook and changed variable assignment to begin experimenting with its functionality. Rust contains stricter rules as compared with Python. Ownership and variable assignment differ, with Rust forcing ownership, borrowing, and synchronization rules to be explicit. 
+
+# Testing 
+
+## 1. Unit Tests 
+
+Unit tests check for data loading and dataset structure, handling of missing file, filtering coffee with above average quality scores, filtering coffee type ("Robusta" or "Arabica), and sweetness-based linear regression predictions. 
+
+## 2. System / Integration Tests 
+
+End-to-end test implementation to check overall workflow by loading the dataset, applying the coffee-quality filters, training the sweetness linear regression model as a predictor for coffee quality, and confirming the results are produced successfully. 
+
+## 3. Test Pass 
+
+Pytest used for automated testing. Run tests with: 
+
+python3 -m pytest -v
+
+
