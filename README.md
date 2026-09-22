@@ -35,16 +35,21 @@ Ran the Rust Jupyter Notebook and changed variable assignment to begin experimen
 
 ## 1. Unit Tests 
 
-Unit tests check for data loading and dataset structure, handling of missing file, filtering coffee with above average quality scores, filtering coffee type ("Robusta" or "Arabica), and sweetness-based linear regression predictions. 
+Unit tests check for: 
+- Data loading and dataset structure
+- Missing files 
+- Filtering coffee with above average quality ("Total.Cup.Points") scores
+- Filtering coffee type ("Robusta" or "Arabica")
+- Sweetness-based linear regression predictions
 
 ## 2. System / Integration Tests 
 
-End-to-end test implementation to check overall workflow by loading the dataset, applying the coffee-quality filters, training the sweetness linear regression model as a predictor for coffee quality, and confirming the results are produced successfully. 
+End-to-end test implementation to check overall workflow by loading the dataset, applying the coffee-quality filters, training the Sweetness linear regression model, and confirming that predictions are produced successfully. 
 
-## 3. Test Pass 
+## 3. Test Results  
 
-Pytest used for automated testing. Run tests with: 
+Pytest was used for automated testing: python3 -m pytest -v
 
-python3 -m pytest -v
+All 7 automated tests pass successfully. 
 
 
