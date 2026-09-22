@@ -52,4 +52,8 @@ Pytest was used for automated testing: python3 -m pytest -v
 
 All 7 automated tests pass successfully. 
 
+[![Run Tests](https://github.com/Nada-a-ali/IDS706-Assignment-2/actions/workflows/tests.yml/badge.svg)](https://github.com/Nada-a-ali/IDS706-Assignment-2/actions/workflows/tests.yml)
+
+
+
 
