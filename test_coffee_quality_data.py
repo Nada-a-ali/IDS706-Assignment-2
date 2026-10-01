@@ -7,7 +7,7 @@ from Coffee_Data import (
     filter_above_avg_score,
     filter_arabica,
     filter_robusta,
-    sweetness_ML,
+    sweetness_ml,
 )
 
 data_file = "merged_data_cleaned.csv"
@@ -80,7 +80,7 @@ def test_filter_arabica_no_match():
 def test_sweetness_prediction():
     df = load_data(data_file)
 
-    model, predictions = sweetness_ML(df)
+    model, predictions = sweetness_ml(df)
 
     assert model is not None
     assert len(predictions) == len(df)
@@ -94,7 +94,7 @@ def test_sweetness_prediction_small_dataset():
         {"Sweetness": [8.0, 9.0, 10.0], "Total.Cup.Points": [80.0, 82.0, 84.0]}
     )
 
-    model, predictions = sweetness_ML(df)
+    model, predictions = sweetness_ml(df)
     assert len(predictions) == 3
     assert np.isfinite(predictions).all()
 
@@ -109,7 +109,7 @@ def test_end_to_end():
 
     robusta = filter_robusta(df)
 
-    model, predictions = sweetness_ML(df)
+    model, predictions = sweetness_ml(df)
 
     assert len(df) > 0
     assert len(above_average) > 0
