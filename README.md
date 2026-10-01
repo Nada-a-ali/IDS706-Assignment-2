@@ -50,7 +50,9 @@ End-to-end test implementation to check overall workflow by loading the dataset,
 
 Pytest was used for automated testing: python3 -m pytest -v
 
-All 7 automated tests pass successfully. 
+Test coverage includes 10 automated tests, spanning data loading, filtering, edge cases, machine-learning predictions, and the end-to-end workflow.
+
+All 10 automated tests pass successfully. 
 
 [![Run Tests](https://github.com/Nada-a-ali/IDS706-Assignment-2/actions/workflows/tests.yml/badge.svg)](https://github.com/Nada-a-ali/IDS706-Assignment-2/actions/workflows/tests.yml)
 
