@@ -66,3 +66,16 @@ To improve readability, consistency, and documentation, the code was refactored 
 - Updated the "test_coffee_quality_data.py" file to use the renamed "sweetness_ml()" function
 - Used Black for Python code formatting and Flake8 for code quality checks, which identified a line-length issue that was then corrected 
 
+## 5. Docker and Containerization 
+
+The project was containerized with Docker for reproducibility, running Python and automated tests.
+
+The Docker image installs the required dependencies from "requirements.txt" for test automation.
+
+To build the Docker image:
+- docker build --no-cache -t coffee-quality-analysis .
+
+To run automated tests inside the Docker container: 
+- docker run --rm coffee-quality-analysis
+
+The Docker container ran all 10 tests successfully. 
