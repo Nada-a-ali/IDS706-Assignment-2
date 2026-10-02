@@ -58,6 +58,11 @@ All 10 automated tests pass successfully.
 
 ![Coffee Quality Results](test_pass.png)
 
+## 4. Refactoring and Code Quality Improvement
 
-
+To improve readability, consistency, and documentation, the code was refactored in the following ways: 
+- "sweetness_ML()" was renamed to "sweetness_ml()" in alignment with Python standard naming conventions 
+- Docstrings added to the data loading, filtering, and machine-learning functions to provide context regarding purpose of each function 
+- Updated the "test_coffee_quality_data.py" file to use the renamed "sweetness_ml()" function
+- Used Black for Python code formatting and Flake8 for code quality checks, which identified a line-length issue that was then corrected 
 
